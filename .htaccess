@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+# If the URL does not contain a file or directory, append .php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.php [L,QSA]

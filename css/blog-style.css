@@ -1,0 +1,76 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #16324a;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card-body {
+    height: 200px;
+    line-height: .8;
+    flex-grow: 1;
+}
+
+.card-img-top {
+    width: 100%;  /* Full width of the card */
+    height: 200px;  /* Fixed height */
+    /*object-fit: cover;*/
+    /* Ensures image is cropped without distorting */
+}
+
+
+.btn-primary {
+    background-color: #16324a;
+    border-color: #16324a;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+
+
+
+.pagination .page-link {
+    color: #16324a;
+}
+
+.pagination .page-link:hover {
+    background-color: #16324a;
+    color: white;
+}
+
+/* Added CSS to prevent text overflow */
+.content-text, p, textarea, .form-control {
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* For older browsers */
+    word-break: break-word;
+}
+
+
+/* Override the image zoom effect with higher specificity */
+img.img-fluid {
+    transition: none !important; /* Ensure no transition effect */
+    transform: none !important; /* Ensure no transform on hover */
+}
+
+img.img-fluid:hover {
+    transform: none !important; /* Ensure no transform on hover */
+}
